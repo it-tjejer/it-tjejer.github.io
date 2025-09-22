@@ -3,10 +3,10 @@
 /*använder denna för att spara färgpaletten för hemsidan*/
 :root{
     --neutral-color: #ffffff;
-    --base-color: #27638b;
+    --base-color: #ffcef2;
     --secondary-color: #0d3669;
     --accent-colorA: #d3cfc9;
-    --accent-colorB: #eadac1;
+    --accent-colorB: #9b5caa;
 }
 
 
@@ -39,6 +39,7 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: var(--accent-colorB);
     text-align: center;
+    color: white;
     height: 400px;
 }
 
