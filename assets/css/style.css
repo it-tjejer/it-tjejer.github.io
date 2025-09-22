@@ -1,0 +1,112 @@
+/*typsnitt: färg, storlek, justering, vikt*/
+
+/*använder denna för att spara färgpaletten för hemsidan*/
+:root{
+    --neutral-color: #ffffff;
+    --base-color: #27638b;
+    --secondary-color: #0d3669;
+    --accent-colorA: #d3cfc9;
+    --accent-colorB: #eadac1;
+}
+
+
+
+/*sätter bakgrundsfärg, generell textfärg, och textfont*/
+body {
+    background-color: var(--base-color);
+    color: var(--secondary-color);
+    font-family: monospace;
+}
+
+/*skapar en särskild border som återanvänds*/
+.border-custom {
+    gap: 1px;
+    background-color: var(--neutral-color);
+    padding: 10px;
+    margin: 10px;
+    border-style: double;
+    border-radius: 1%;
+    border-color: #002147;
+}
+
+
+
+/*skapar projectcard som blir child till projects. varje kort innehåller ett projekt*/
+.projectcard {
+    margin-top: 10px;
+    padding-top: 30px;
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: var(--accent-colorB);
+    text-align: center;
+    height: 300px;
+}
+
+/*denna används för att skapa en särskild textbox som använd i den personliga biografin */
+.text-box {
+    margin: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: var(--accent-colorB);
+    text-align: left;
+}
+
+
+/*här är regler för olika textelement*/
+h1 {
+    font-size: 55px;
+}
+
+h2 {
+    font-size: 34px;
+}
+
+h3 {
+    font-size: 21px;
+    text-decoration: underline;
+}
+
+
+h4, h5, h6 {
+    font-size: 13px;
+}
+
+
+p {
+    font-size: 13px;
+}
+
+/*regler för listelementk*/
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  border-right: 30px solid var(--neutral-color);
+}
+
+
+li:last-child {
+  border-right: none;
+}
+
+
+/*stil för länkar*/
+li a {
+    font-size: 21px;
+    color: var(--secondary-color);
+}
+
+/*besökt länk*/
+li a:visited{
+    font-size: 21px;
+    color:#cd195b;
+}
+
+/*när man hovrar med mus över länk*/
+li a:hover{
+    text-decoration: underline;
+}
